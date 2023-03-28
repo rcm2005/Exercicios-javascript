@@ -76,6 +76,19 @@ if(nota >= 6 ){
 }else if (nota <=5 ){
     document.write('reprovado')
 }
+ document.write("<br>")
+ 
+let numeroesc = prompt("digite o numero escolhido: ")
+let termo1 = prompt("digite o termo mínimo: ") 
+let termo2 = prompt("digite o termo máximo: ")
+
+if(numeroesc > termo1 && numeroesc < termo2){
+    document.write(numeroesc, " é menor do que " ,termo1, " e menor que ",termo2 )
+}else{
+    document.write(numeroesc, " não está entre" ,termo1, "e" ,termo2,)
+}
+
+
 
 
 </script>
