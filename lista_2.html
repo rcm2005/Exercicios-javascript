@@ -15,24 +15,24 @@ document.write('seja bem vindo')
 
 document.write("<br>")
 
-let idade = prompt('qual é a sua idade ?');
+let idade = prompt('qual é a sua idade ?');    //solicitando o dado da idade do usuário
 console.log('sua idade é ', idade);
-
+// classificando em maior de idade e menor de idade
 if(idade >= 18){
     document.write('É maior de idade');
 }else if (idade <=18){
     document.write('É menor de idade');
 }
 document.write("<br>")
-//let rafael = "admin"
-//let vitor = "usuário"
-let admin = ["Rafael", "rafael", "vitor", "Vitor"];
-var [primeiro, segundo, terceiro, quarto] = admin
-
-let nome = prompt('digite seu nome: ');
+//let rafael = "admin"   // ideia abandonada, escolhi outro caminho
+//let vitor = "usuário"   
+let admin = ["Rafael", "rafael", "vitor", "Vitor"];  // determinando quais nomes são classificados como adm
+var [primeiro, segundo, terceiro, quarto] = admin  // parte do processo de designação da função admin
+//coloquei variantes com inicial minúscula para evitar erros
+let nome = prompt('digite seu nome: '); //solicita o nome do usuário
 
 if(nome == primeiro){
-    document.write('usuário logado');
+    document.write('usuário logado');  // testa a paridade entre o nome do imput e cada possível admin
 }else if(nome == segundo){
     document.write('usuário logado');
 }else if(nome == terceiro){
@@ -42,6 +42,24 @@ if(nome == primeiro){
 }else if(nome !='admin'){
     document.write('acesso negado');
 }
+//mostreseosnúmerosabaixoémaior que 105
+//a)20
+//b)60
+//c)106
+//d)110
+document.write("<br>")
+
+
+let numero = prompt("digite um número: ")
+
+if(numero > 105){
+    document.write(numero," é maior do que 105")
+}else if(numero < 105){
+    document.write(numero, ' é menor do que 105')
+}else{
+    document.write (numero, " é igual a 105")
+}
+
 
 
 </script>
