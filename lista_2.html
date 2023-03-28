@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+
+
+document.write('seja bem vindo')
+
+document.write("<br>")
+
+let idade = prompt('qual é a sua idade ?');
+console.log('sua idade é ', idade);
+
+if(idade >= 18){
+    document.write('É maior de idade');
+}else if (idade <=18){
+    document.write('É menor de idade');
+}
+document.write("<br>")
+//let rafael = "admin"
+//let vitor = "usuário"
+let admin = ["Rafael", "rafael", "vitor", "Vitor"];
+var [primeiro, segundo, terceiro, quarto] = admin
+
+let nome = prompt('digite seu nome: ');
+
+if(nome == primeiro){
+    document.write('usuário logado');
+}else if(nome == segundo){
+    document.write('usuário logado');
+}else if(nome == terceiro){
+    document.write('usuário logado');
+}else if(nome == quarto){
+    document.write('usuário logado');
+}else if(nome !='admin'){
+    document.write('acesso negado');
+}
+
+
+</script>
+
+
+
+
+
+    
+</body>
+</html>
