@@ -64,6 +64,28 @@ else if(username != admin){
     document.write('acesso negado');
 }
 
+document.write("<br>")
+
+let nota1 = prompt('Digite a primeira nota: ')
+let nota2 = prompt('Digite a segunda nota: ')
+let nota3 = prompt('Digite a terceira nota: ')
+let nota4 = prompt('Digite a quarta nota: ')
+let nota5 = prompt('Digite a quinta nota: ')
+let nota6 = prompt('Digite a sexta nota: ')
+let nota7 = prompt('Digite a sétima nota: ')
+//solicitando todos os dados das notas
+let media = nota1 + nota2 + nota3 + nota4 + nota5 + nota6 + nota7 / 7
+//calculando a media aritmetica das 7 notas
+if(media < 6){   // comparando a media com a nota de corte
+    console.log(media)
+    document.write('Você está reprovado')
+}           // indicando se o aluno esta aprovado ou reprovado
+else{
+    console.log(media)
+    document.write('Você está aprovado')
+}
+
+
 
 
 
